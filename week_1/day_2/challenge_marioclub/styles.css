@@ -25,6 +25,7 @@ h1 {
     border: 8px solid white;
     border-radius: 60px;
     padding: 6px 12px;
+    font-size: 3vw;
 }
 
 /* Yellow banner */
@@ -36,7 +37,7 @@ h1 {
 #top-banner {
     position:static;
     text-align: center;
-    margin:none;
+    margin: 0;
     margin:0;
 }
 
