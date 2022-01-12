@@ -1,7 +1,7 @@
 * {
     font-family: sans-serif;
-    padding: 0;
-    margin:0;
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
@@ -16,19 +16,8 @@ header {
     position: sticky;
     top: 0;
     padding: 10px;
+    z-index: 1;
 }
-
-/* h1 {
-    color: white;
-    border-style: solid;
-    border-color: white;
-    border-radius: 40%;
-    border-width: 10px;
-    text-align: center;
-    width: 25%;
-    margin-left: 35%;
-    font-size: 3vw;
-} */
 
 h1 {
     color: white;
@@ -41,12 +30,14 @@ h1 {
 /* Yellow banner */
 #banner-img {
     width: 100%;
+    margin:0;
 }
 
 #top-banner {
     position:static;
     text-align: center;
     margin:none;
+    margin:0;
 }
 
 #welcome {
@@ -67,6 +58,7 @@ nav {
     text-align: center;
     font-size: 20px;
     padding: 10px;
+    position: sticky;
 }
 
 a {
@@ -94,21 +86,28 @@ h2 {
 #intro {
     line-height: 1.6;
     color:rgb(36, 36, 36);
+    padding: 0px 10px;
 }
 
+#lorem {
+    line-height:200%;
+}
 
 /* Images */
-.thumb {
-    width: 25%;
-    padding-top: 75px;
-    padding-bottom: 75px;
+.thumb-image {
+    width:40%;
+    margin: 20px;
+}
 
+#images-section {
+    margin-left: 10%;
 }
 
 /* Input form */
 h3 {
     margin: 0;
     font-size: 30px;
+    padding: 10px;
 }
 
 input {
@@ -122,6 +121,7 @@ input {
     text-align: center;
     background-color: lightgray;
     margin: 0%;
+    padding: 50px;
 }
 
 /* Footer */
