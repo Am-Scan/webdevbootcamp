@@ -1,0 +1,102 @@
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+
+#header {
+    height: 30vh;
+    background-image: url("img/banner.jpg");
+    width:100%;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  font-size: 6vh;
+}
+
+/* Navigation */
+
+#nav-bar {
+    height: 25px;
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    width: 19%;
+    padding: 20px 0px;
+    font-size: 1.25vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Why study */
+
+#why-study {
+    margin: 100px;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.flex-container>div {
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    padding: 20px;
+
+    /* remove at the end! */
+    /* border-color: white;
+    border-style: solid; */
+}
+
+.why-img {
+    max-width: 105%;
+}
+
+.why-lorem {
+    line-height: 1.5;
+    font-size: 1.1vh;
+    padding: 10px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5vh;
+}
+
+/* Testimonials */
+
+#testimonials {
+text-align: center;
+line-height: 300%;
+}
