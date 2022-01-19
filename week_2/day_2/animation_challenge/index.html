@@ -1,28 +1,29 @@
 <html>
+
 <head>
-	<title>Bird Flying Animation</title>
-	<link rel="stylesheet" href = "styles.css">
+    <title>Bird Flying Animation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<a href="#" onclick="play()">
+    <a href="#" onclick="play()">
 
-    <audio id="audio" src="birdsong.mp3" loop="loop"></audio>
+        <audio id="audio" src="birdsong.mp3" loop="loop"></audio>
 
-	<script>
-      function play() 
-      {
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
-    </script>
-	
-	<div id="bird"></div>
-	<div id="street"></div>
-	</a>
+        <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+        </script>
+
+        <div id="bird"></div>
+        <div id="street"></div>
+    </a>
 
     <footer>
         <img id="trees" src="img/trees.png" alt="treeline">
     </footer>
 </body>
+
 </html>

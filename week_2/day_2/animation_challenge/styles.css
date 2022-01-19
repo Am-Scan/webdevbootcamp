@@ -1,37 +1,44 @@
-body
-	{
-		background: url(https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
-		background-size: cover;
-		overflow: hidden;
+body {
+	background: url(https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+	background-size: cover;
+	overflow: hidden;
+}
+
+#bird {
+	position: relative;
+	top: 200px;
+	background: url(img/flying-game-character-sprite-sheet3.jpg);
+	width: 305px;
+	height: 204px;
+	animation: walking_animation 1s steps(4) infinite, move_forward 5s linear infinite;
+}
+
+@keyframes walking_animation {
+	0% {
+		background-position: 0px;
 	}
 
-#bird
-	{
-		position:relative;
-		top:200px;
-		background: url(img/flying-game-character-sprite-sheet3.jpg); 
-		width:305px;
-		height:204px;		
-		animation:walking_animation 1s steps(4) infinite,move_forward 5s linear infinite;	
+	100% {
+		background-position: 1219px;
+	}
+}
+
+@keyframes move_forward {
+	0% {
+		transform: translateX(-100px);
 	}
 
-@keyframes walking_animation
-	{
-		0%{background-position:0px;}
-		100%{background-position:1219px;}
+	100% {
+		transform: translateX(100vw);
 	}
+}
 
-@keyframes move_forward
-	{
-		0%{transform:translateX(-100px);}
-		100%{transform:translateX(100vw);}
-	}
-
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
 
 #trees {
-    width: 100%;
+	width: 100%;
 }
