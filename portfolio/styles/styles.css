@@ -1,0 +1,16 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 10vh;
+}
+
+.title-div {
+    padding-left: 20%;
+    padding-top: 5%;
+    background-image: url("../img/chemical.jpg");
+    
+}
