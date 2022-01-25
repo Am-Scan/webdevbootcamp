@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let name = prompt("What's your name?");
+
+        console.log(`1) Name entered: ${name}`);
+
+        let firstChar = name.charAt(0);
+
+        console.log(`2a) First letter: ${firstChar}`);
+
+        let upperFirstChar = firstChar.toUpperCase();
+
+        console.log(`b) Uppercase: ${upperFirstChar}`);
+
+        let restOfName = name.substr(1);
+
+        console.log(`c) Rest of name: ${restOfName}`);
+
+        let concat = upperFirstChar + restOfName;
+
+        console.log(`Joined up name: ${concat}`);
+
+        alert(`Your capitalised name is ${concat}`);
+        
+    </script>
+</body>
+</html> 
