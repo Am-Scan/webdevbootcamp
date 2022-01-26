@@ -16,15 +16,24 @@
     </header>
 
     <div id="input-div">
-        <h2>Enter your weight in kg:</h2>
-        <input type="text" name="" id="weight">
-        <h2>Enter your height in metres:</h2>
-        <input type="text" name="" id="height">
+
+        <form id="input-form" action="">
+
+            <h2>Enter your weight in kg:</h2>
+            <input type="text" name="weight" id="input-weight">
+            <h2>Enter your height in metres:</h2>
+            <input type="text" name="height" id="input-height">
+            <br>
+            
+        </form>
+        <button onclick="myFunction()">Submit</button>
+
+        
 
     </div>
 
     <div id="result-div">
-
+        <p id="demo"></p>
     </div>
 
     <script src="scripts.js"></script>
