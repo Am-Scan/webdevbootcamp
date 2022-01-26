@@ -1,0 +1,24 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Chango', cursive;
+    font-weight: lighter;
+    font-size: 6vw;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1%;
+}
+
+input {
+    margin: 10px;
+    width: 50%;
+    font-size: 40px;
+}
