@@ -11,25 +11,11 @@
     <script>
         let name = prompt("What's your name?");
 
-        console.log(`1) Name entered: ${name}`);
-
-        let firstChar = name.charAt(0);
-
-        console.log(`2a) First letter: ${firstChar}`);
-
-        let upperFirstChar = firstChar.toUpperCase();
-
-        console.log(`b) Uppercase: ${upperFirstChar}`);
+        let upperFirstChar = name.charAt(0).toUpperCase();
 
         let restOfName = name.substr(1);
 
-        console.log(`c) Rest of name: ${restOfName}`);
-
-        let concat = upperFirstChar + restOfName;
-
-        console.log(`Joined up name: ${concat}`);
-
-        alert(`Your capitalised name is ${concat}`);
+        alert(`Your capitalised name is ${upperFirstChar + restOfName}`);
         
     </script>
 </body>
