@@ -28,6 +28,10 @@ p {
   font-family: 'Indie Flower', cursive;
 }
 
+#results {
+  font-size: 5rem;
+}
+
 img {
   width: 80%;
 }
