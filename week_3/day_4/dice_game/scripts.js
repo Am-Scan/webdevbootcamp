@@ -1,9 +1,7 @@
-//Select right area of html
+
 let playerOneDice = document.getElementsByClassName("img1");
 
 let playerTwoDice = document.getElementsByClassName("img2");
-
-//Randomly select dice image for players (selection function)
 
 function randomNo() {
     let random1 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
@@ -19,8 +17,6 @@ function chooseDice() {
     return {resultOne, resultTwo}
 }
 
-//Calculate a resul
-
 
 let result = chooseDice();
 
@@ -34,8 +30,6 @@ if (result.resultOne < result.resultTwo) {
 } else {
     text = "Draw!";
 }
-
-//Display a result
 
 let resultsText = document.getElementById("results");
 
