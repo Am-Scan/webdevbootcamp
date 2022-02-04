@@ -1,0 +1,96 @@
+* {
+  background-color: #e09558;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #ffffc7;
+}
+
+/* Nav */
+nav {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  height: 10vh;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: row;
+  
+  
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-item {
+  /* line-height: 1; */
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5vh;
+  font-weight: normal;
+  margin: 0.375rem;
+  flex-grow: 1;
+  
+}
+
+/* Logo */
+
+#logo {
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+}
+
+#logo-div {
+ flex-grow: 0;
+}
+
+/* Brand name */
+
+#brandname {
+  font-family: "Miniver", cursive;
+  font-weight: lighter;
+  margin: 0%;
+  padding: 0;
+  font-size: 4vh;
+}
+
+#brandname-div {
+    margin-top: 2vh;
+    flex-grow: 10;
+}
+
+#join-div {
+    margin-right: 5%;
+}
+
+/* Mobile responsive */
+
+nav .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 600px) {
+    nav a {
+        display: none;
+    }
+    nav .icon {
+        float: right;
+        display: block;
+      }
+}
+
+@media screen and (max-width: 600px) {
+    nav.responsive {position:relative;}
+    nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin-top:100px;
+        margin-left: -250px;
+    }
