@@ -71,6 +71,30 @@ nav {
   }
 
 /* Main */
+  #discover-main {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    margin-top: 5%;
+  }
+
+   
+  #discover-main > article {
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+    margin-left: 3%;
+  }
+  
+  #main > aside {
+    flex: 0.25 0 20vw;
+  }
+  
+  #main > aside {
+    order: 2;
+    
+  }
+
   #main {
     display: flex;
     flex: 1;
@@ -78,7 +102,8 @@ nav {
     align-items: center;
     margin-top: 20%;
   }
-  
+
+   
   #main > article {
     flex: 1;
     order: 1;
@@ -134,14 +159,27 @@ button {
         width: 40%;
         margin: 10% 10%;
     }
-    .myButton:hover {
+  button:hover {
         background:linear-gradient(to bottom, #913331 5%, #b0423e 100%);
         background-color:#913331;
     }
-    .myButton:active {
+  button:active {
         position:relative;
         top:1px;
     }
+
+#discover-button {
+  margin: 3vh 1vw;
+}
+
+
+#discover-para {
+  font-size: 1.5vw; 
+}
+
+#albums-div {
+  margin: 0% 5%;
+  padding:0;
 }
 
 /* Mobile responsive */
