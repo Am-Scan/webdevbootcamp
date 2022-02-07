@@ -182,6 +182,39 @@ button {
   padding:0;
 }
 
+#signup-div {
+  margin-top: 5%;
+  align-items: center;
+  text-align: center;
+}
+
+.form-div {
+  padding: 2%;
+}
+
+input {
+  border: 0.5px;
+  border-radius: 2%;
+  background-color: #ffffc7;
+  width: 60%;
+  font-family: roboto;
+  color: #913331;
+  font-size: 3vh;
+}
+
+#terms-div {
+  margin-top:3%;
+}
+
+#signup-button {
+  margin:5% 0%;
+  padding:10;
+}
+
+#terms {
+  font-size: 2vw;
+}
+
 /* Mobile responsive */
 
 nav .icon {
