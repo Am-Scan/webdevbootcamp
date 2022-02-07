@@ -19,6 +19,7 @@ button {
     top:20px;
     right:20px;
     padding:1rem;
+    z-index: 1;
 }
 
 nav {
@@ -28,6 +29,11 @@ nav {
     right:0;
     height: 100vh;
     padding:2rem;
+    transform:translateX(100%);
+}
+
+nav.active {
+    transform:translateX(0%);
 }
 
 nav ul {
@@ -37,10 +43,16 @@ nav ul {
 }
 
 nav ul li {
-    padding: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
 }
 
 nav a {
     color:white;
     text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+button.active {
+  
 }
