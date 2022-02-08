@@ -12,10 +12,17 @@ function createHeart() {
   newHeart.innerHTML= "♥";
   newHeart.className = "heart";
   newHeart.style.left = Math.random() * 100 + "%";
-  newHeart.style.animationDuration = Math.random() * 3 + 2 + "s";
+  newHeart.style.animationDuration = Math.random() * 2 + 2 + "s";
   body.appendChild(newHeart);
 }
 
-setInterval(createHeart,1000);
+function removeHeart() {
+    let heartNumber = document.getElementsByClassName("heart").length;
+    let elementToRemove = document.getElementsByClassName("heart")[heartNumber-1];
+    elementToRemove.remove();
+    console.log("removed "+ elementToRemove);
+}
 
-setTimeout(setInterval(heart.remove(),5000));
+setInterval(createHeart,500);
+
+setInterval(removeHeart,750);

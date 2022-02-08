@@ -20,6 +20,7 @@ body {
     animation: heartMove 10s infinite;
     font-size: 10vh;
     color:blueviolet;
+    text-shadow: 5px 5px 10px red;
 }
 
 @keyframes heartMove {
@@ -29,4 +30,9 @@ body {
     100%{
         transform: translateY(110vh) ;
     }
+}
+
+h1 {
+    color: blueviolet;
+    font-family: poppins;
 }
