@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API test</title>
+
+    <style>
+      p {
+        font: bold 3vh Arial;
+        text-decoration: none;
+        background-color: #eeeeee;
+        color: #333333;
+        padding: 2px 6px 2px 6px;
+        border-top: 1px solid #cccccc;
+        border-right: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #cccccc;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="#" />
+
+    <p id="btn">New Cute Cat Pic!</p>
+
+    <script>
+      const img = document.querySelector("img");
+      const btn = document.getElementById("btn");
+
+      fetch(
+        "https://api.giphy.com/v1/gifs/translate?api_key=0linM6fY5FM7sWOCVdfGv2ZzTja38Zve&s=cats",
+        { mode: "cors" }
+      )
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (response) {
+          img.src = response.data.images.original.url;
+        });
+
+      function fetchNew() {
+        fetch(
+          "https://api.giphy.com/v1/gifs/translate?api_key=0linM6fY5FM7sWOCVdfGv2ZzTja38Zve&s=cats",
+          { mode: "cors" }
+        )
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (response) {
+            img.src = response.data.images.original.url;
+          });
+      }
+
+      btn.addEventListener("click", fetchNew);
+    </script>
+  </body>
+</html>
